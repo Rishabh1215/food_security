@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## CMPE 280 Hackathon - Food Security & Data Sensors
+
+This project presents a graphical view of various food security datasets.
+
+## Installing dependencies
+
+Run the following command to install dependencies
+
+### `npm install`
+
 ## Available Scripts
 
 In the project directory, you can run:
