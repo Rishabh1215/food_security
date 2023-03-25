@@ -70,27 +70,6 @@ export const ImportSideBar = (props) => {
         <div class="w3-bar-block">
           <br />
           <br />
-
-          <div class="w3-container">
-            <button
-              class="w3-btn w3-blue w3-round-large"
-              style={{ width: '100%' }}
-            >
-              <Link to="/import" style={{ textDecoration: 'None' }}>
-                Import Data
-              </Link>
-            </button>
-            <br></br>
-            <br></br>
-            <button
-              class="w3-btn w3-blue w3-round-large"
-              style={{ width: '100%' }}
-            >
-              <Link to="/govtrepresentative" style={{ textDecoration: 'None' }}>
-                Predict
-              </Link>
-            </button>
-          </div>
         </div>
       </nav>
     </>
