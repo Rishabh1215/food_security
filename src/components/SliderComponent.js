@@ -1,12 +1,13 @@
-import React from 'react';
-import Typography from '@mui/material/Typography';
-import Slider from '@mui/material/Slider';
+import React from "react";
+import Typography from "@mui/material/Typography";
+import Slider from "@mui/material/Slider";
 
 export const SliderComponent = (props) => {
   const [value, setValue] = React.useState([1990, 2000]);
+
   const rangeSelector = (event, newValue) => {
     setValue(newValue);
-    console.log(newValue);
+    console.log("newValue", newValue);
   };
 
   const step = 5;
@@ -18,13 +19,14 @@ export const SliderComponent = (props) => {
   };
   return (
     <>
-      <div class="w3-container w3-padding-32">
-        <div class="slider">
+      <div className="w3-container w3-padding-32">
+        <div className="slider">
           <div
             style={{
-              margin: 'auto',
-              display: 'block',
-              width: '100%',
+              margin: "auto",
+              display: "block",
+              width: "100%",
+              marginTop: '1rem'
             }}
           >
             <Typography id="range-slider" gutterBottom>
@@ -41,8 +43,8 @@ export const SliderComponent = (props) => {
               step={step}
             />
           </div>
-          <button class="w3-btn w3-blue w3-round-large" onClick={temp}>
-            {' '}
+          <button className="w3-btn w3-blue w3-round-large" onClick={temp}>
+            {" "}
             Update Graphs
           </button>
         </div>

@@ -1,23 +1,112 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Collapsible from "react-collapsible";
+import { faAngleRight, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import "../styles/newSideBar.css";
+
 export const NewSideBar = (props) => {
   const selectCountry = (e) => {
     e.preventDefault();
     console.log(e.target.value);
     props.changeCountry(e.target.value);
   };
+
+  const MacroeconomicHeader = () => {
+    return (
+      <div className="header">
+        <h5>
+          <span style={{ marginRight: "1rem" }}>
+            <FontAwesomeIcon icon={faAngleRight} />
+          </span>
+          Macroeconomic (USD){" "}
+        </h5>
+      </div>
+    );
+  };
+
+  const AgriculturalHeader = () => {
+    return (
+      <div className="header">
+        <h5>
+          {" "}
+          <span style={{ marginRight: "1rem" }}>
+            <FontAwesomeIcon icon={faAngleRight} />
+          </span>
+          Agricultural
+        </h5>
+      </div>
+    );
+  };
+
+  const DebtServicesHeader = () => {
+    return (
+      <div className="header">
+        <h5>
+          {" "}
+          <span style={{ marginRight: "1rem" }}>
+            <FontAwesomeIcon icon={faAngleRight} />
+          </span>
+          Debt Services
+        </h5>
+      </div>
+    );
+  };
+
+  const CropsHeader = () => {
+    return (
+      <div className="header">
+        <h5>
+          {" "}
+          <span style={{ marginRight: "1rem" }}>
+            <FontAwesomeIcon icon={faAngleRight} />
+          </span>
+          Crops
+        </h5>
+      </div>
+    );
+  };
+
+  const YieldHeader = () => {
+    return (
+      <div className="header">
+        <h5>
+          {" "}
+          <span style={{ marginRight: "1rem" }}>
+            <FontAwesomeIcon icon={faAngleRight} />
+          </span>
+          Yield
+        </h5>
+      </div>
+    );
+  };
+
+  const SensorHeader = () => {
+    return (
+      <div className="header">
+        <h5>
+          {" "}
+          <span style={{ marginRight: "1rem" }}>
+            <FontAwesomeIcon icon={faAngleRight} />
+          </span>
+          Sensor
+        </h5>
+      </div>
+    );
+  };
+
   return (
     <>
       <nav
         class="w3-sidebar w3-collapse w3-white w3-animate-left"
-        style={{ zIndex: '3', width: '300px', color: '#aaa' }}
+        style={{ zIndex: "3", width: "300px", color: "#aaa" }}
         id="mySidebar"
       >
         <br />
         <div class="w3-container">
-          <h5>Country</h5>
+          <h5 style={{ marginLeft: "1rem", marginBottom: '0px', color: '#2196F3', fontWeight: 'bold' }}>Country</h5>
         </div>
-        <div class="w3-bar-block">
+        <div class="w3-bar-block" style={{ marginLeft: "1rem" }}>
           <select
             class="w3-bar-item w3-button w3-padding "
             onChange={selectCountry}
@@ -26,139 +115,149 @@ export const NewSideBar = (props) => {
             <option label="China" value="1"></option>
             <option label="USA" value="2"></option>
           </select>
-          <br />
-          <br />
         </div>
         <br />
-        <div class="w3-container">
-          <h5>MacroEconomic</h5>
-        </div>
-        <div class="w3-bar-block">
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('GDP')}
-          >
-            <i class="fa fa-users fa-fw"></i>  GDP
-          </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('FDI_INFLOW')}
-          >
-            <i class="fa fa-users fa-fw"></i>  FDI Inflows
-          </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('FDI_OUTFLOW')}
-          >
-            <i class="fa fa-users fa-fw"></i>  FDI OutFlows
-          </div>
-          <br />
-          <br />
-        </div>
-        <div class="w3-container">
-          <h5>Agricultural</h5>
-        </div>
-        <div class="w3-bar-block">
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('AGRI')}
-          >
-            <i class="fa fa-users fa-fw"></i>  Contributions of Agri (%GDP)
-          </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('CREDIT')}
-          >
-            <i class="fa fa-users fa-fw"></i>  Credit
-          </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('FERTILIZERS')}
-          >
-            <i class="fa fa-users fa-fw"></i>  Fertilizers
-          </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('FERTILIZERS_PROD')}
-          >
-            <i class="fa fa-users fa-fw"></i>  Fertilizers PROD
-          </div>
-          <br />
-          <br />
-        </div>
 
-
-        <div class="w3-container">
-          <h5>MacroEconomic</h5>
-        </div>
-        <div class="w3-bar-block">
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('RESERVES')}
-          >
-            <i class="fa fa-users fa-fw"></i>  Reserves
-          </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('GNI')}
-          >
-            <i class="fa fa-users fa-fw"></i>  GNI
-          </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('TOTAL_DEBT')}
-          >
-            <i class="fa fa-users fa-fw"></i>  Total Debt (%)
-          </div>
-          <br />
-          <br />
-
-        <div class="w3-container">
-        <h5>Crops</h5>
-        </div>
-        <div class="w3-bar-block">
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('BANANA')}
-          >
-            <i class="fa fa-users fa-fw"></i>  Bananas
-          </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('MANGO')}
-          >
-            <i class="fa fa-users fa-fw"></i>  Mangos
-          </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('WALNUT')}
-          >
-            <i class="fa fa-users fa-fw"></i>  Walnuts
-          </div>
-          </div>
-
-
-          <div class="w3-container">
-            <button
-              class="w3-btn w3-blue w3-round-large"
-              style={{ width: '100%' }}
+        <Collapsible trigger={<MacroeconomicHeader />}>
+          <div class="w3-bar-block">
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("GDP")}
             >
-              <Link to="/import" style={{ textDecoration: 'None' }}>
-                Import Data
-              </Link>
-            </button>
-            <br></br>
-            <br></br>
-            <button
-              class="w3-btn w3-blue w3-round-large"
-              style={{ width: '100%' }}
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                GDP (USD)
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("FDI_INFLOW")}
             >
-              <Link to="/govtrepresentative" style={{ textDecoration: 'None' }}>
-                Predict
-              </Link>
-            </button>
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                FDI Inflows (USD)
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("FDI_OUTFLOW")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                FDI OutFlows (USD)
+            </div>
           </div>
-        </div>
+        </Collapsible>
+
+        <Collapsible trigger={<AgriculturalHeader />}>
+          <div class="w3-bar-block">
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("AGRI")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Contributions of Agri (%GDP)
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("CREDIT")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Credit
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("FERTILIZERS")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Fertilizers
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("FERTILIZERS_PROD")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Fertilizers PROD
+            </div>
+          </div>
+        </Collapsible>
+
+        <Collapsible trigger={<DebtServicesHeader />}>
+          <div class="w3-bar-block">
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("RESERVES")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Reserves
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("GNI")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                GNI
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("TOTAL_DEBT")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Total Debt (%)
+            </div>
+          </div>
+        </Collapsible>
+
+        <Collapsible trigger={<CropsHeader />}>
+          <div class="w3-bar-block">
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("BANANA")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Banana
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("MANGO")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Mangos
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("WALNUT")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Walnuts
+            </div>
+          </div>
+        </Collapsible>
+
+        <Collapsible trigger={<YieldHeader />}></Collapsible>
+
+        <Collapsible trigger={<SensorHeader />}></Collapsible>
       </nav>
     </>
   );

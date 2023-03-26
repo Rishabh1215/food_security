@@ -31,9 +31,9 @@ export const ResearcherView = () => {
     let allData = getAllData();
     let data = allData[y];
     setGraphType(x);
-    // console.log(allData);
+
     console.log(data);
-    // console.log('CLicked', x);
+ 
     if (x === 'GDP') {
       setXvalues(data['GDP']['x']);
       setYvalues(data['GDP']['y']);
@@ -80,18 +80,18 @@ export const ResearcherView = () => {
   return (
     <>
       <Header />
-      <nav class="w3-sidebar" style={{ width: '300px' }}>
+      <nav className="w3-sidebar" style={{ width: '300px' }}>
         {/* <Sidebar sidebarButtonClick={sidebarButtonClick} /> */}
         <NewSideBar
           sidebarButtonClick={sidebarButtonClick}
           changeCountry={changeCountry}
         />
       </nav>
-      <div class="w3-main" style={{ marginLeft: '350px', marginTop: '170px' }}>
-        <div class="w3-panel">
+      <div className="w3-main" style={{ marginLeft: '350px', marginTop: '170px' }}>
+        <div className="w3-panel">
           <SliderComponent />
           <h1>Graphs</h1>{' '}
-          <div class="w3-container w3-padding-32">
+          <div className="w3-container w3-padding-32">
             <ChartDiv
               xvalues={xvalues}
               yvalues={yvalues}
