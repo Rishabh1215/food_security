@@ -2,13 +2,34 @@ import React from "react";
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from "highcharts";
 
-export function ChartDiv(props) {
+export function ChartDiv2(props) {
   let chartTitle = props.chartTitle;
   let options = {
     xAxis: {
       categories: props.xvalues,
     },
-    series: [{data: props.yvalues}],
+    yAxis: [{
+      title: {
+        text: "Tonnes"
+      }
+    },  {
+      title: {
+        text: "ha"
+      },
+      opposite: true
+    }],
+    series: [
+      {
+        name: props.name1,
+        yAxis: 0,
+        data: props.yvalues1
+      },
+      {
+        name: props.name2,
+        yAxis: 1,
+        data: props.yvalues2
+      }
+    ],
     title: {
       text: chartTitle,
     },

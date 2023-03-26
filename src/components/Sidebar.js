@@ -53,7 +53,7 @@ const Sidebar = (props) => {
       <IconContext.Provider value={{ color: '#fff' }}>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
-            {SidebarData.map((item, index) => {
+            {/* {SidebarData.map((item, index) => {
               return (
                 <SubMenu
                   sidebarButtonClick={props.sidebarButtonClick}
@@ -61,10 +61,27 @@ const Sidebar = (props) => {
                   key={index}
                 />
               );
-            })}
+            })} */}
+            {/* <br></br>
+            <br></br> */}
+            {/* <button
+              class="w3-btn w3-blue w3-round-large"
+              style={{ width: '100%' }}
+            >
+              <Link to="/import" style={{ textDecoration: 'None' }}>
+                Import Data
+              </Link>
+            </button>
             <br></br>
-            <br></br>
-            
+            <br></br> */}
+            {/* <button
+              class="w3-btn w3-blue w3-round-large"
+              style={{ width: '100%' }}
+            >
+              <Link to="/govtrepresentative" style={{ textDecoration: 'None' }}>
+                Predict
+              </Link>
+            </button> */}
           </SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>
