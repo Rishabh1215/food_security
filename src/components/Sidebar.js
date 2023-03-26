@@ -1,29 +1,7 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import { SidebarData } from './SidebarData';
-import SubMenu from './SubMenu';
-import { IconContext } from 'react-icons/lib';
+import React, { useState } from "react";
+import styled from "styled-components";
 
-const Nav = styled.div`
-  background: #15171c;
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 10px;
-`;
-
-const NavIcon = styled(Link)`
-  margin-left: 2rem;
-  font-size: 2rem;
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-`;
+import { IconContext } from "react-icons/lib";
 
 const SidebarNav = styled.nav`
   background: #15171c;
@@ -33,7 +11,7 @@ const SidebarNav = styled.nav`
   justify-content: center;
   position: fixed;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 10;
   margin-top: 170px;
@@ -44,45 +22,13 @@ const SidebarWrap = styled.div`
 `;
 
 const Sidebar = (props) => {
-  const [sidebar, setSidebar] = useState(true);
-
-  // const showSidebar = () => setSidebar(!sidebar);
+  const [sidebar] = useState(true);
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider value={{ color: "#fff" }}>
         <SidebarNav sidebar={sidebar}>
-          <SidebarWrap>
-            {/* {SidebarData.map((item, index) => {
-              return (
-                <SubMenu
-                  sidebarButtonClick={props.sidebarButtonClick}
-                  item={item}
-                  key={index}
-                />
-              );
-            })} */}
-            {/* <br></br>
-            <br></br> */}
-            {/* <button
-              class="w3-btn w3-blue w3-round-large"
-              style={{ width: '100%' }}
-            >
-              <Link to="/import" style={{ textDecoration: 'None' }}>
-                Import Data
-              </Link>
-            </button>
-            <br></br>
-            <br></br> */}
-            {/* <button
-              class="w3-btn w3-blue w3-round-large"
-              style={{ width: '100%' }}
-            >
-              <Link to="/govtrepresentative" style={{ textDecoration: 'None' }}>
-                Predict
-              </Link>
-            </button> */}
-          </SidebarWrap>
+          <SidebarWrap></SidebarWrap>
         </SidebarNav>
       </IconContext.Provider>
     </>

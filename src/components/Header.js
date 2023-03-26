@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -13,14 +13,14 @@ const flagsrc = {
   0: india,
   1: china,
   2: usa,
-  3: ecuador
-}
+  3: ecuador,
+};
 
 export const Header = (props) => {
   const { countryId } = props;
-  
+
   const flag = flagsrc[countryId];
-  console.log("flag: ", flag)
+  console.log("flag: ", flag);
 
   return (
     <Container fluid>
@@ -30,7 +30,9 @@ export const Header = (props) => {
         </Col>
 
         <Col xs={2} md={2} lg={2} xlg={2}>
-          <span className='text-success'><h5>Connected</h5></span>
+          <span className="text-success">
+            <h5>Connected</h5>
+          </span>
         </Col>
 
         <Col className="" xs={6} md={6} lg={6} xlg={6}>

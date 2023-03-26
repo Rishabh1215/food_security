@@ -2,12 +2,13 @@ import React from "react";
 import { Header } from "../components/Header";
 import { ImportSideBar } from "../components/ImportSideBar";
 import { getImportData } from "../data/data";
-import { PieChartDiv } from "../components/PieChartDiv";
+
 export const ImportData = () => {
   const [country, setCountry] = React.useState();
   const [year, setYear] = React.useState();
   const [type, setType] = React.useState();
-  const [pieData, setPieData] = React.useState();
+  // eslint-disable-next-line no-unused-vars
+  const [_, setPieData] = React.useState();
 
   const changeCountry = (countryName) => {
     console.log("***********", countryName);
