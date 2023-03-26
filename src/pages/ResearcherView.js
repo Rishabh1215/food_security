@@ -167,6 +167,7 @@ export const ResearcherView = () => {
       <LoadScript googleMapsApiKey="AIzaSyA8iE3bEmlzWw2N1k_boRhOqA1bQBeCTVo"></LoadScript>
 
       <Header countryId={countryId} />
+      <hr/>
 
       <nav class="w3-sidebar" style={{ width: "300px" }}>
         <NewSideBar
@@ -175,7 +176,7 @@ export const ResearcherView = () => {
         />
       </nav>
 
-      <div class="w3-main" style={{ marginLeft: "350px", marginTop: "170px" }}>
+      <div class="w3-main" style={{ marginLeft: "350px" }}>
         {showGraph ? (
           <div class="w3-panel">
             <SliderComponent />
