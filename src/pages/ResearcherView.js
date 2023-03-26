@@ -13,6 +13,14 @@ import { NewSideBar } from "../components/NewSideBar";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { Circle } from "@react-google-maps/api";
 
+import Highcharts from 'highcharts';
+
+const plotOptions = {
+  series: {
+    pointStart: 2010
+  }
+};
+
 const mapContainerStyle = {
   height: "400px",
   width: "800px",
@@ -45,6 +53,12 @@ const options = {
 export const ResearcherView = () => {
   const [xvalues, setXvalues] = React.useState();
   const [yvalues, setYvalues] = React.useState();
+  const [yvalues2, setYvalues2] = React.useState();
+  const [series, setSeries] = React.useState([
+    {
+      data: []
+    }
+  ]);
   const [chartTitle, setChartTitle] = React.useState();
   const [countryId, setCountryId] = React.useState(0);
   const [graphType, setGraphType] = React.useState("GDP");
@@ -113,6 +127,7 @@ export const ResearcherView = () => {
     } else if (x === "MANGOES") {
       setCoordinates(phillipines)
     }
+
   };
 
   return (
@@ -159,6 +174,9 @@ export const ResearcherView = () => {
         </div>
         <br></br>
         <br></br>
+
+        
+
         <br></br>
         <br></br>
       </div>

@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 // import { Chart } from 'react-google-charts';
-import HighchartsReact from 'highcharts-react-official';
-import Highcharts from 'highcharts';
+import HighchartsReact from "highcharts-react-official";
+import Highcharts from "highcharts";
 
 export function ChartDiv(props) {
   // const first = props.xvalues[0];
@@ -13,12 +13,17 @@ export function ChartDiv(props) {
 
   // let data = [['Year', 'GDP'], props.xvalues, props.yvalues];
   console.log(props.yvalues);
+  // const myseries = [
+  //   {
+  //     data
+  //   }
+  // ]
   let chartTitle = props.chartTitle;
   let options = {
     xAxis: {
       categories: props.xvalues,
     },
-    series: [{ data: props.yvalues }],
+    series: [{data: props.yvalues}],
     title: {
       text: chartTitle,
     },
@@ -28,7 +33,7 @@ export function ChartDiv(props) {
       },
     },
     chart: {
-      zoomType: 'x,y',
+      zoomType: "x,y",
     },
   };
 

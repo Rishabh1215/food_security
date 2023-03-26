@@ -131,6 +131,24 @@ export const NewSideBar = (props) => {
             </div>
           </div>
 
+          <div class="w3-container">
+            <h5>Yield</h5>
+          </div>
+          <div class="w3-bar-block">
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("WALNUTS-YIELD")}
+            >
+              <i class="fa fa-users fa-fw"></i> Walnuts Iran
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("MANGOES-YIELD")}
+            >
+              <i class="fa fa-users fa-fw"></i> Mangoes Philippines
+            </div>
+          </div>
+
         </div>
       </nav>
     </>

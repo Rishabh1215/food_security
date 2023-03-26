@@ -11357,6 +11357,309 @@ export const getImportData = () => {
   return [egypt_rice_data, egypt_wheat_data, sa_rice_data, sa_wheat_data];
 };
 
+export const iranData = [
+  {
+      Year: 1961,
+      AreaHarvested: 4400,
+      Production: 8000
+  },
+  {
+      Year: 1962,
+      AreaHarvested: 4400,
+      Production: 8000
+  },
+  {
+      Year: 1963,
+      AreaHarvested: 2500,
+      Production: 3000
+  },
+  {
+      Year: 1964,
+      AreaHarvested: 2500,
+      Production: 3000
+  },
+  {
+      Year: 1965,
+      AreaHarvested: 2500,
+      Production: 4000
+  },
+  {
+      Year: 1966,
+      AreaHarvested: 2500,
+      Production: 3000
+  },
+  {
+      Year: 1967,
+      AreaHarvested: 2500,
+      Production: 4000
+  },
+  {
+      Year: 1968,
+      AreaHarvested: 3000,
+      Production: 6000
+  },
+  {
+      Year: 1969,
+      AreaHarvested: 3000,
+      Production: 6000
+  },
+  {
+      Year: 1970,
+      AreaHarvested: 2000,
+      Production: 4000
+  },
+  {
+      Year: 1971,
+      AreaHarvested: 1900,
+      Production: 3500
+  },
+  {
+      Year: 1972,
+      AreaHarvested: 1800,
+      Production: 3200
+  },
+  {
+      Year: 1973,
+      AreaHarvested: 1700,
+      Production: 3000
+  },
+  {
+      Year: 1974,
+      AreaHarvested: 1600,
+      Production: 3300
+  },
+  {
+      Year: 1975,
+      AreaHarvested: 1500,
+      Production: 3100
+  },
+  {
+      Year: 1976,
+      AreaHarvested: 1500,
+      Production: 2800
+  },
+  {
+      Year: 1977,
+      AreaHarvested: 1500,
+      Production: 3250
+  },
+  {
+      Year: 1978,
+      AreaHarvested: 1500,
+      Production: 3000
+  },
+  {
+      Year: 1979,
+      AreaHarvested: 1500,
+      Production: 3000
+  },
+  {
+      Year: 1980,
+      AreaHarvested: 2200,
+      Production: 6000
+  },
+  {
+      Year: 1981,
+      AreaHarvested: 4800,
+      Production: 13000
+  },
+  {
+      Year: 1982,
+      AreaHarvested: 6283,
+      Production: 18197
+  },
+  {
+      Year: 1983,
+      AreaHarvested: 6733,
+      Production: 21612
+  },
+  {
+      Year: 1984,
+      AreaHarvested: 7468,
+      Production: 22996
+  },
+  {
+      Year: 1985,
+      AreaHarvested: 7840,
+      Production: 31422
+  },
+  {
+      Year: 1986,
+      AreaHarvested: 11347,
+      Production: 40930
+  },
+  {
+      Year: 1987,
+      AreaHarvested: 8951,
+      Production: 32957
+  },
+  {
+      Year: 1988,
+      AreaHarvested: 10544,
+      Production: 37821
+  },
+  {
+      Year: 1989,
+      AreaHarvested: 12143,
+      Production: 64009
+  },
+  {
+      Year: 1990,
+      AreaHarvested: 15025,
+      Production: 44482
+  },
+  {
+      Year: 1991,
+      AreaHarvested: 17973,
+      Production: 64486
+  },
+  {
+      Year: 1992,
+      AreaHarvested: 22208,
+      Production: 71237
+  },
+  {
+      Year: 1993,
+      AreaHarvested: 25976,
+      Production: 110819
+  },
+  {
+      Year: 1994,
+      AreaHarvested: 28975,
+      Production: 117218
+  },
+  {
+      Year: 1995,
+      AreaHarvested: 32287,
+      Production: 119218
+  },
+  {
+      Year: 1996,
+      AreaHarvested: 35781,
+      Production: 113185
+  },
+  {
+      Year: 1997,
+      AreaHarvested: 41766,
+      Production: 124196
+  },
+  {
+      Year: 1998,
+      AreaHarvested: 45152,
+      Production: 145145
+  },
+  {
+      Year: 1999,
+      AreaHarvested: 50161,
+      Production: 142906
+  },
+  {
+      Year: 2000,
+      AreaHarvested: 51971,
+      Production: 129276
+  },
+  {
+      Year: 2001,
+      AreaHarvested: 61795,
+      Production: 162838
+  },
+  {
+      Year: 2002,
+      AreaHarvested: 67194,
+      Production: 177673
+  },
+  {
+      Year: 2003,
+      AreaHarvested: 74979,
+      Production: 204883
+  },
+  {
+      Year: 2004,
+      AreaHarvested: 88888,
+      Production: 168320
+  },
+  {
+      Year: 2005,
+      AreaHarvested: 96697,
+      Production: 247864
+  },
+  {
+      Year: 2006,
+      AreaHarvested: 146010,
+      Production: 367445
+  },
+  {
+      Year: 2007,
+      AreaHarvested: 119687,
+      Production: 299789
+  },
+  {
+      Year: 2008,
+      AreaHarvested: 115919,
+      Production: 260355
+  },
+  {
+      Year: 2009,
+      AreaHarvested: 116794,
+      Production: 279742
+  },
+  {
+      Year: 2010,
+      AreaHarvested: 117603,
+      Production: 268135
+  },
+  {
+      Year: 2011,
+      AreaHarvested: 112855,
+      Production: 280275
+  },
+  {
+      Year: 2012,
+      AreaHarvested: 124843,
+      Production: 284421
+  },
+  {
+      Year: 2013,
+      AreaHarvested: 109759,
+      Production: 222610
+  },
+  {
+      Year: 2014,
+      AreaHarvested: 141019,
+      Production: 403158
+  },
+  {
+      Year: 2015,
+      AreaHarvested: 142000,
+      Production: 420000
+  },
+  {
+      Year: 2016,
+      AreaHarvested: 71425,
+      Production: 349192
+  },
+  {
+      Year: 2017,
+      AreaHarvested: 53952,
+      Production: 393598
+  },
+  {
+      Year: 2018,
+      AreaHarvested: 43946,
+      Production: 304040
+  },
+  {
+      Year: 2019,
+      AreaHarvested: 44780,
+      Production: 321074
+  },
+  {
+      Year: 2020,
+      AreaHarvested: 59920,
+      Production: 356666
+  }
+]
+
 export let getAllData = () => {
   let india = {};
   let china = {};
