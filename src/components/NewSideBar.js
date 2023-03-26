@@ -114,7 +114,7 @@ export const NewSideBar = (props) => {
             <option label="India" value="0"></option>
             <option label="China" value="1"></option>
             <option label="USA" value="2"></option>
-            <option label="Ecuador" value="3"></option>
+            <option label="Ecuador" value="1"></option>
           </select>
         </div>
         <br />
@@ -228,35 +228,47 @@ export const NewSideBar = (props) => {
           <div class="w3-bar-block">
             <div
               class="w3-bar-item w3-button w3-padding "
-              onClick={() => props.sidebarButtonClick("BANANA")}
+              onClick={() => props.sidebarButtonClick("WALNUTS")}
             >
               <span style={{ marginLeft: "1rem" }}>
                 <FontAwesomeIcon icon={faAngleDown} />
               </span>
-                Banana
+                Walnuts - Iran
             </div>
             <div
               class="w3-bar-item w3-button w3-padding "
-              onClick={() => props.sidebarButtonClick("MANGO")}
+              onClick={() => props.sidebarButtonClick("MANGOES")}
             >
               <span style={{ marginLeft: "1rem" }}>
                 <FontAwesomeIcon icon={faAngleDown} />
               </span>
-                Mangos
-            </div>
-            <div
-              class="w3-bar-item w3-button w3-padding "
-              onClick={() => props.sidebarButtonClick("WALNUT")}
-            >
-              <span style={{ marginLeft: "1rem" }}>
-                <FontAwesomeIcon icon={faAngleDown} />
-              </span>
-                Walnuts
+                Mangoes Phillipines
             </div>
           </div>
         </Collapsible>
 
-        <Collapsible trigger={<YieldHeader />}></Collapsible>
+        <Collapsible trigger={<YieldHeader />}>
+          <div class="w3-bar-block">
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("IRAN")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Iran
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("PHIL")}
+            >
+              <span style={{ marginLeft: "1rem" }}>
+                <FontAwesomeIcon icon={faAngleDown} />
+              </span>
+                Phillipines
+            </div>
+          </div>
+        </Collapsible>
 
         <Collapsible trigger={<SensorHeader />}></Collapsible>
       </nav>

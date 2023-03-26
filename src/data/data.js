@@ -10988,6 +10988,623 @@ export const getImportData = () => {
   return [egypt_rice_data, egypt_wheat_data, sa_rice_data, sa_wheat_data];
 };
 
+export const iranData = [
+  {
+      Year: 1961,
+      AreaHarvested: 4400,
+      Production: 8000
+  },
+  {
+      Year: 1962,
+      AreaHarvested: 4400,
+      Production: 8000
+  },
+  {
+      Year: 1963,
+      AreaHarvested: 2500,
+      Production: 3000
+  },
+  {
+      Year: 1964,
+      AreaHarvested: 2500,
+      Production: 3000
+  },
+  {
+      Year: 1965,
+      AreaHarvested: 2500,
+      Production: 4000
+  },
+  {
+      Year: 1966,
+      AreaHarvested: 2500,
+      Production: 3000
+  },
+  {
+      Year: 1967,
+      AreaHarvested: 2500,
+      Production: 4000
+  },
+  {
+      Year: 1968,
+      AreaHarvested: 3000,
+      Production: 6000
+  },
+  {
+      Year: 1969,
+      AreaHarvested: 3000,
+      Production: 6000
+  },
+  {
+      Year: 1970,
+      AreaHarvested: 2000,
+      Production: 4000
+  },
+  {
+      Year: 1971,
+      AreaHarvested: 1900,
+      Production: 3500
+  },
+  {
+      Year: 1972,
+      AreaHarvested: 1800,
+      Production: 3200
+  },
+  {
+      Year: 1973,
+      AreaHarvested: 1700,
+      Production: 3000
+  },
+  {
+      Year: 1974,
+      AreaHarvested: 1600,
+      Production: 3300
+  },
+  {
+      Year: 1975,
+      AreaHarvested: 1500,
+      Production: 3100
+  },
+  {
+      Year: 1976,
+      AreaHarvested: 1500,
+      Production: 2800
+  },
+  {
+      Year: 1977,
+      AreaHarvested: 1500,
+      Production: 3250
+  },
+  {
+      Year: 1978,
+      AreaHarvested: 1500,
+      Production: 3000
+  },
+  {
+      Year: 1979,
+      AreaHarvested: 1500,
+      Production: 3000
+  },
+  {
+      Year: 1980,
+      AreaHarvested: 2200,
+      Production: 6000
+  },
+  {
+      Year: 1981,
+      AreaHarvested: 4800,
+      Production: 13000
+  },
+  {
+      Year: 1982,
+      AreaHarvested: 6283,
+      Production: 18197
+  },
+  {
+      Year: 1983,
+      AreaHarvested: 6733,
+      Production: 21612
+  },
+  {
+      Year: 1984,
+      AreaHarvested: 7468,
+      Production: 22996
+  },
+  {
+      Year: 1985,
+      AreaHarvested: 7840,
+      Production: 31422
+  },
+  {
+      Year: 1986,
+      AreaHarvested: 11347,
+      Production: 40930
+  },
+  {
+      Year: 1987,
+      AreaHarvested: 8951,
+      Production: 32957
+  },
+  {
+      Year: 1988,
+      AreaHarvested: 10544,
+      Production: 37821
+  },
+  {
+      Year: 1989,
+      AreaHarvested: 12143,
+      Production: 64009
+  },
+  {
+      Year: 1990,
+      AreaHarvested: 15025,
+      Production: 44482
+  },
+  {
+      Year: 1991,
+      AreaHarvested: 17973,
+      Production: 64486
+  },
+  {
+      Year: 1992,
+      AreaHarvested: 22208,
+      Production: 71237
+  },
+  {
+      Year: 1993,
+      AreaHarvested: 25976,
+      Production: 110819
+  },
+  {
+      Year: 1994,
+      AreaHarvested: 28975,
+      Production: 117218
+  },
+  {
+      Year: 1995,
+      AreaHarvested: 32287,
+      Production: 119218
+  },
+  {
+      Year: 1996,
+      AreaHarvested: 35781,
+      Production: 113185
+  },
+  {
+      Year: 1997,
+      AreaHarvested: 41766,
+      Production: 124196
+  },
+  {
+      Year: 1998,
+      AreaHarvested: 45152,
+      Production: 145145
+  },
+  {
+      Year: 1999,
+      AreaHarvested: 50161,
+      Production: 142906
+  },
+  {
+      Year: 2000,
+      AreaHarvested: 51971,
+      Production: 129276
+  },
+  {
+      Year: 2001,
+      AreaHarvested: 61795,
+      Production: 162838
+  },
+  {
+      Year: 2002,
+      AreaHarvested: 67194,
+      Production: 177673
+  },
+  {
+      Year: 2003,
+      AreaHarvested: 74979,
+      Production: 204883
+  },
+  {
+      Year: 2004,
+      AreaHarvested: 88888,
+      Production: 168320
+  },
+  {
+      Year: 2005,
+      AreaHarvested: 96697,
+      Production: 247864
+  },
+  {
+      Year: 2006,
+      AreaHarvested: 146010,
+      Production: 367445
+  },
+  {
+      Year: 2007,
+      AreaHarvested: 119687,
+      Production: 299789
+  },
+  {
+      Year: 2008,
+      AreaHarvested: 115919,
+      Production: 260355
+  },
+  {
+      Year: 2009,
+      AreaHarvested: 116794,
+      Production: 279742
+  },
+  {
+      Year: 2010,
+      AreaHarvested: 117603,
+      Production: 268135
+  },
+  {
+      Year: 2011,
+      AreaHarvested: 112855,
+      Production: 280275
+  },
+  {
+      Year: 2012,
+      AreaHarvested: 124843,
+      Production: 284421
+  },
+  {
+      Year: 2013,
+      AreaHarvested: 109759,
+      Production: 222610
+  },
+  {
+      Year: 2014,
+      AreaHarvested: 141019,
+      Production: 403158
+  },
+  {
+      Year: 2015,
+      AreaHarvested: 142000,
+      Production: 420000
+  },
+  {
+      Year: 2016,
+      AreaHarvested: 71425,
+      Production: 349192
+  },
+  {
+      Year: 2017,
+      AreaHarvested: 53952,
+      Production: 393598
+  },
+  {
+      Year: 2018,
+      AreaHarvested: 43946,
+      Production: 304040
+  },
+  {
+      Year: 2019,
+      AreaHarvested: 44780,
+      Production: 321074
+  },
+  {
+      Year: 2020,
+      AreaHarvested: 59920,
+      Production: 356666
+  }
+]
+
+export const yieldYears = [1961, 
+1962, 
+1963, 
+1964, 
+1965, 
+1966, 
+1967, 
+1968, 
+1969, 
+1970, 
+1971, 
+1972, 
+1973, 
+1974, 
+1975, 
+1976, 
+1977, 
+1978, 
+1979, 
+1980, 
+1981, 
+1982, 
+1983, 
+1984, 
+1985, 
+1986, 
+1987, 
+1988, 
+1989, 
+1990, 
+1991, 
+1992, 
+1993, 
+1994, 
+1995, 
+1996, 
+1997, 
+1998, 
+1999, 
+2000, 
+2001, 
+2002, 
+2003, 
+2004, 
+2005, 
+2006, 
+2007, 
+2008, 
+2009, 
+2010, 
+2011, 
+2012, 
+2013, 
+2014, 
+2015, 
+2016, 
+2017, 
+2018, 
+2019, 
+2020
+];
+
+export const prodIran = [
+8000, 
+  8000, 
+  3000, 
+  3000, 
+  4000, 
+  3000, 
+  4000, 
+  6000, 
+  6000, 
+  4000, 
+  3500, 
+  3200, 
+  3000, 
+  3300, 
+  3100, 
+  2800, 
+  3250, 
+  3000, 
+  3000, 
+  6000, 
+  13000, 
+  18197, 
+  21612, 
+  22996, 
+  31422, 
+  40930, 
+  32957, 
+  37821, 
+  64009, 
+  44482, 
+  64486, 
+  71237, 
+  110819, 
+  117218, 
+  119218, 
+  113185, 
+  124196, 
+  145145, 
+  142906, 
+  129276, 
+  162838, 
+  177673, 
+  204883, 
+  168320, 
+  247864, 
+  367445, 
+  299789, 
+  260355, 
+  279742, 
+  268135, 
+  280275, 
+  284421, 
+  222610, 
+  403158, 
+  420000, 
+  349192, 
+  393598, 
+  304040, 
+  321074, 
+  356666  
+];
+
+export const areaIran = [
+4400, 
+4400, 
+2500, 
+2500, 
+2500, 
+2500, 
+2500, 
+3000, 
+3000, 
+2000, 
+1900, 
+1800, 
+1700, 
+1600, 
+1500, 
+1500, 
+1500, 
+1500, 
+1500, 
+2200, 
+4800, 
+6283, 
+6733, 
+7468, 
+7840, 
+11347, 
+8951, 
+10544, 
+12143, 
+15025, 
+17973, 
+22208, 
+25976, 
+28975, 
+32287, 
+35781, 
+41766, 
+45152, 
+50161, 
+51971, 
+61795, 
+67194, 
+74979, 
+88888, 
+96697, 
+146010, 
+119687, 
+115919, 
+116794, 
+117603, 
+112855, 
+124843, 
+109759, 
+141019, 
+142000, 
+71425, 
+53952, 
+43946, 
+44780, 
+59920
+];
+
+export const areaPhil = [
+  17000, 
+18000, 
+24000, 
+25000, 
+35000, 
+35000, 
+35000, 
+37000, 
+40000, 
+45500, 
+40500, 
+40790, 
+43550, 
+43500, 
+46620, 
+35800, 
+36190, 
+35400, 
+38600, 
+39180, 
+48817, 
+51195, 
+51978, 
+52745, 
+53736, 
+54393, 
+55464, 
+55725, 
+56457, 
+77137, 
+88884, 
+92513, 
+97623, 
+105643, 
+114770, 
+124105, 
+131959, 
+136966, 
+139878, 
+141620, 
+145101, 
+158598, 
+164109, 
+167172, 
+172413, 
+179900, 
+192418, 
+195175, 
+196658, 
+197816, 
+195401, 
+197157, 
+196358, 
+196412, 
+196662, 
+195958, 
+194367, 
+194267, 
+194923, 
+195135
+];
+
+export const prodPhil = [
+  66150, 
+70000, 
+92300, 
+95086, 
+129490, 
+131490, 
+134091, 
+126458, 
+140644, 
+151667, 
+137506, 
+143409, 
+187600, 
+191500, 
+239298, 
+293100, 
+307574, 
+335244, 
+363300, 
+377184, 
+366600, 
+311600, 
+303300, 
+339300, 
+355700, 
+372879, 
+367108, 
+361138, 
+370100, 
+453986, 
+498440, 
+538068, 
+563001, 
+641006, 
+715224, 
+805972, 
+1010596, 
+1015109, 
+887204, 
+868569, 
+901893, 
+976857, 
+1026949, 
+986613, 
+1003273, 
+936370, 
+1040966, 
+897199, 
+785510, 
+843508, 
+800551, 
+783420, 
+831224, 
+899014, 
+917005, 
+827075, 
+748952, 
+725122, 
+753985, 
+753103
+];
+
 export let getAllData = () => {
   let india = {};
   let china = {};
