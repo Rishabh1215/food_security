@@ -20,13 +20,13 @@ const mapContainerStyle = {
 
 const iran = {
   lat: 32.4279,
-  lng: 53.6880,
+  lng: 53.688,
 };
 
 const phillipines = {
   lat: 13,
-  lng: 122
-}
+  lng: 122,
+};
 
 const options = {
   strokeColor: "#FF0000",
@@ -65,9 +65,9 @@ export const ResearcherView = () => {
     let allData = getAllData();
     let data = allData[y];
     setGraphType(x);
-    // console.log(allData);
-    console.log("data: ", data);
-    // console.log('CLicked', x);
+
+    console.log(data);
+
     if (x === "GDP") {
       setXvalues(data["GDP"]["x"]);
       setYvalues(data["GDP"]["y"]);
@@ -108,59 +108,60 @@ export const ResearcherView = () => {
       setXvalues(data["TOTAL_DEBT"]["x"]);
       setYvalues(data["TOTAL_DEBT"]["y"]);
       setChartTitle("TOTAL DEBT");
-    } else if (x === "WALNUTS") {
-      setCoordinates(iran)
-    } else if (x === "MANGOES") {
-      setCoordinates(phillipines)
     }
   };
 
   return (
     <>
-      <LoadScript googleMapsApiKey="AIzaSyA8iE3bEmlzWw2N1k_boRhOqA1bQBeCTVo"></LoadScript>
+      <div className="container">
+        <div className="row-12">
+          <div className="col-12" style={{ marginTop: "3rem" }}>
+            <div style={{ border: "solid", padding: "1rem" }}>
+              <Header />
+            </div>
 
-      <Header countryId={countryId}/>
-      
-      <nav class="w3-sidebar" style={{ width: "300px" }}>
-        {/* <Sidebar sidebarButtonClick={sidebarButtonClick} /> */}
-        <NewSideBar
-          sidebarButtonClick={sidebarButtonClick}
-          changeCountry={changeCountry}
-        />
-      </nav>
+            <hr />
+            <div style={{ border: "solid" }}></div>
+            <nav className="w3-sidebar" style={{ width: "300px" }}>
+              <NewSideBar
+                sidebarButtonClick={sidebarButtonClick}
+                changeCountry={changeCountry}
+              />
+            </nav>
+            <div
+              className="w3-main"
+              style={{ marginLeft: "350px", borderLeft: "solid" }}
+            >
+              <div className="w3-panel">
+                <SliderComponent />
+                <h1>Graphs</h1>{" "}
+                <div className="w3-container w3-padding-32">
+                  <ChartDiv
+                    xvalues={xvalues}
+                    yvalues={yvalues}
+                    chartTitle={chartTitle}
+                  ></ChartDiv>
+                </div>
+              </div>
 
-      <div class="w3-main" style={{ marginLeft: "350px", marginTop: "170px" }}>
-        <div class="w3-panel">
-          <SliderComponent />
-          <h1>Graphs</h1>{" "}
-          <div class="w3-container w3-padding-32">
-            <ChartDiv
-              xvalues={xvalues}
-              yvalues={yvalues}
-              chartTitle={chartTitle}
-            ></ChartDiv>
+              <div className="crops">
+                <GoogleMap
+                  id="circle-example"
+                  mapContainerStyle={mapContainerStyle}
+                  zoom={7}
+                  center={coordinates}
+                >
+                  <Circle
+                    // required
+                    center={coordinates}
+                    // required
+                    options={options}
+                  />
+                </GoogleMap>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="crops">
-          <GoogleMap
-            id="circle-example"
-            mapContainerStyle={mapContainerStyle}
-            zoom={7}
-            center={coordinates}
-          >
-            <Circle
-              // required
-              center={coordinates}
-              // required
-              options={options}
-            />
-          </GoogleMap>
-        </div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
       </div>
     </>
   );
