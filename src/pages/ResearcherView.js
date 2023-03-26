@@ -118,7 +118,9 @@ export const ResearcherView = () => {
   return (
     <>
       <LoadScript googleMapsApiKey="AIzaSyA8iE3bEmlzWw2N1k_boRhOqA1bQBeCTVo"></LoadScript>
-      <Header />
+
+      <Header countryId={countryId}/>
+      
       <nav class="w3-sidebar" style={{ width: "300px" }}>
         {/* <Sidebar sidebarButtonClick={sidebarButtonClick} /> */}
         <NewSideBar

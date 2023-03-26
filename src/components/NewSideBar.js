@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 export const NewSideBar = (props) => {
   const selectCountry = (e) => {
     e.preventDefault();
@@ -10,7 +10,7 @@ export const NewSideBar = (props) => {
     <>
       <nav
         class="w3-sidebar w3-collapse w3-white w3-animate-left"
-        style={{ zIndex: '3', width: '300px', color: '#aaa' }}
+        style={{ zIndex: "3", width: "300px", color: "#aaa" }}
         id="mySidebar"
       >
         <br />
@@ -25,6 +25,7 @@ export const NewSideBar = (props) => {
             <option label="India" value="0"></option>
             <option label="China" value="1"></option>
             <option label="USA" value="2"></option>
+            <option label="Ecuador" value="3"></option>
           </select>
           <br />
           <br />
@@ -36,19 +37,19 @@ export const NewSideBar = (props) => {
         <div class="w3-bar-block">
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('GDP')}
+            onClick={() => props.sidebarButtonClick("GDP")}
           >
             <i class="fa fa-users fa-fw"></i> GDP
           </div>
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('FDI_INFLOW')}
+            onClick={() => props.sidebarButtonClick("FDI_INFLOW")}
           >
             <i class="fa fa-users fa-fw"></i> FDI Inflows
           </div>
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('FDI_OUTFLOW')}
+            onClick={() => props.sidebarButtonClick("FDI_OUTFLOW")}
           >
             <i class="fa fa-users fa-fw"></i> FDI OutFlows
           </div>
@@ -61,25 +62,25 @@ export const NewSideBar = (props) => {
         <div class="w3-bar-block">
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('AGRI')}
+            onClick={() => props.sidebarButtonClick("AGRI")}
           >
             <i class="fa fa-users fa-fw"></i> Contributions of Agri (%GDP)
           </div>
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('CREDIT')}
+            onClick={() => props.sidebarButtonClick("CREDIT")}
           >
             <i class="fa fa-users fa-fw"></i> Credit
           </div>
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('FERTILIZERS')}
+            onClick={() => props.sidebarButtonClick("FERTILIZERS")}
           >
             <i class="fa fa-users fa-fw"></i> Fertilizers
           </div>
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('FERTILIZERS_PROD')}
+            onClick={() => props.sidebarButtonClick("FERTILIZERS_PROD")}
           >
             <i class="fa fa-users fa-fw"></i> Fertilizers PROD
           </div>
@@ -87,48 +88,47 @@ export const NewSideBar = (props) => {
           <br />
         </div>
 
-
         <div class="w3-container">
           <h5>MacroEconomic</h5>
         </div>
         <div class="w3-bar-block">
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('RESERVES')}
+            onClick={() => props.sidebarButtonClick("RESERVES")}
           >
             <i class="fa fa-users fa-fw"></i> Reserves
           </div>
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('GNI')}
+            onClick={() => props.sidebarButtonClick("GNI")}
           >
             <i class="fa fa-users fa-fw"></i> GNI
           </div>
           <div
             class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('TOTAL_DEBT')}
+            onClick={() => props.sidebarButtonClick("TOTAL_DEBT")}
           >
             <i class="fa fa-users fa-fw"></i> Total Debt (%)
           </div>
           <br />
           <br />
 
-        <div class="w3-container">
-        <h5>Crops</h5>
-        </div>
-        <div class="w3-bar-block">
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('WALNUTS')}
-          >
-            <i class="fa fa-users fa-fw"></i> Walnuts
+          <div class="w3-container">
+            <h5>Crops</h5>
           </div>
-          <div
-            class="w3-bar-item w3-button w3-padding "
-            onClick={() => props.sidebarButtonClick('MANGOES')}
-          >
-            <i class="fa fa-users fa-fw"></i> Mangoes
-          </div>
+          <div class="w3-bar-block">
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("WALNUTS")}
+            >
+              <i class="fa fa-users fa-fw"></i> Walnuts
+            </div>
+            <div
+              class="w3-bar-item w3-button w3-padding "
+              onClick={() => props.sidebarButtonClick("MANGOES")}
+            >
+              <i class="fa fa-users fa-fw"></i> Mangoes
+            </div>
           </div>
 
         </div>
