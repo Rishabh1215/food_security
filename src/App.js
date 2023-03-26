@@ -12,12 +12,6 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={ResearcherView} />
-        <Route path="/import" exact component={ImportData} />
-        <Route
-          path="/govtrepresentative"
-          exact
-          component={GovtRepresentative}
-        />
       </Switch>
     </Router>
   );

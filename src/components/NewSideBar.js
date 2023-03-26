@@ -114,6 +114,7 @@ export const NewSideBar = (props) => {
             <option label="India" value="0"></option>
             <option label="China" value="1"></option>
             <option label="USA" value="2"></option>
+            <option label="Ecuador" value="3"></option>
           </select>
         </div>
         <br />

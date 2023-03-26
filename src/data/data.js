@@ -1,12 +1,14 @@
 export const country_ids = {
-  0: "India",
-  1: "China",
-  2: "USA",
+  0: 'India',
+  1: 'China',
+  2: 'USA',
+  3: 'Ecuador'
 };
 
 export let india = {};
 export let china = {};
 export let usa = {};
+export let ecuador = {};
 
 export let gdp_current = [
   {

@@ -1,23 +1,57 @@
-import React from 'react';
-import { ChartDiv } from '../components/ChartDiv';
-import { Header } from '../components/Header';
-import Sidebar from '../components/Sidebar';
+import React, { Component } from "react";
+import { ChartDiv } from "../components/ChartDiv";
+import { Header } from "../components/Header";
+import Sidebar from "../components/Sidebar";
 // import { Slider, RangeSlider } from 'rsuite';
-import Typography from '@mui/material/Typography';
-import Slider from '@mui/material/Slider';
-import StepRangeSlider from 'react-step-range-slider';
-import { SliderComponent } from '../components/SliderComponent';
-import { getAllData } from '../data/data';
-import { NewSideBar } from '../components/NewSideBar';
+import Typography from "@mui/material/Typography";
+import Slider from "@mui/material/Slider";
+import StepRangeSlider from "react-step-range-slider";
+import { SliderComponent } from "../components/SliderComponent";
+import { getAllData } from "../data/data";
+import { NewSideBar } from "../components/NewSideBar";
+
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import { Circle } from "@react-google-maps/api";
+
+const mapContainerStyle = {
+  height: "400px",
+  width: "800px",
+};
+
+const iran = {
+  lat: 32.4279,
+  lng: 53.6880,
+};
+
+const phillipines = {
+  lat: 13,
+  lng: 122
+}
+
+const options = {
+  strokeColor: "#FF0000",
+  strokeOpacity: 0.8,
+  strokeWeight: 2,
+  fillColor: "#FF0000",
+  fillOpacity: 0.35,
+  clickable: false,
+  draggable: false,
+  editable: false,
+  visible: true,
+  radius: 30000,
+  zIndex: 1,
+};
+
 export const ResearcherView = () => {
   const [xvalues, setXvalues] = React.useState();
   const [yvalues, setYvalues] = React.useState();
   const [chartTitle, setChartTitle] = React.useState();
   const [countryId, setCountryId] = React.useState(0);
-  const [graphType, setGraphType] = React.useState('GDP');
+  const [graphType, setGraphType] = React.useState("GDP");
+  const [coordinates, setCoordinates] = React.useState(iran);
 
   const changeCountry = (countryId) => {
-    console.log('***********', countryId);
+    console.log("***********", countryId);
     setCountryId(countryId);
     console.log(graphType, countryId);
     sidebarButtonClick(graphType, countryId);
@@ -99,6 +133,26 @@ export const ResearcherView = () => {
             ></ChartDiv>
           </div>
         </div>
+
+        <div className="crops">
+          <GoogleMap
+            id="circle-example"
+            mapContainerStyle={mapContainerStyle}
+            zoom={7}
+            center={coordinates}
+          >
+            <Circle
+              // required
+              center={coordinates}
+              // required
+              options={options}
+            />
+          </GoogleMap>
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
     </>
   );
