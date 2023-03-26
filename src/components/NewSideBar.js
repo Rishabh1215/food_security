@@ -104,7 +104,7 @@ export const NewSideBar = (props) => {
       >
         <br />
         <div class="w3-container">
-          <h5 style={{ marginLeft: "1rem", marginBottom: '0px', color: '#2196F3', fontWeight: 'bold' }}>Country</h5>
+          <h5 style={{ marginBottom: '0px', color: '#2196F3', fontWeight: 'bold' }}>Country</h5>
         </div>
         <div class="w3-bar-block" style={{ marginLeft: "1rem" }}>
           <select

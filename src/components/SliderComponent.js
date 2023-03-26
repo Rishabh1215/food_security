@@ -26,7 +26,6 @@ export const SliderComponent = (props) => {
               margin: "auto",
               display: "block",
               width: "100%",
-              marginTop: '1rem'
             }}
           >
             <Typography id="range-slider" gutterBottom>
